@@ -115,28 +115,28 @@ PS C:\Windows\system32>choco install kubernetes-cli
 
 ### Verification
 
-Verify `kubectl` version 1.17.0 or higher is installed:
+Verify `kubectl` version 1.21.0 or higher is installed:
 
-```shell
+```
 kubectl version --client
 ```
 
 > output
 
-```shell
-Client Version: version.Info{Major:"1", Minor:"17", GitVersion:"v1.17.3", GitCommit:"06ad960bfd03b39c8310aaf92d1e7c12ce618213", GitTreeState:"clean", BuildDate:"2020-02-13T18:08:14Z", GoVersion:"go1.13.8", Compiler:"gc", Platform:"darwin/amd64"}
+```
+Client Version: version.Info{Major:"1", Minor:"21", GitVersion:"v1.21.0", GitCommit:"cb303e613a121a29364f75cc67d3d580833a7479", GitTreeState:"clean", BuildDate:"2021-04-08T16:31:21Z", GoVersion:"go1.16.1", Compiler:"gc", Platform:"linux/amd64"}
 ```
 
 To quick check kubectl version, you can also use the following command : 
 
 ```shell
-kubectl version --short
+kubectl version --client --short
 ```
 
 > output
 
 ```shell
-Client Version: v1.17.3
+Client Version: v1.21.0
 ```
 
 Next: [Provisioning Compute Resources](03-compute-resources.md)
